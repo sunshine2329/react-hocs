@@ -17,8 +17,9 @@ How to Use Higher-Order Components in React
 ```javascript
 const hoc = (WrappedComponent) => {
   // ...
-}
+};
 ```
+
 2. Define the new component
 
 ```javascript
@@ -29,6 +30,7 @@ class NewComponent extends React.Component {
   }
 }
 ```
+
 3. pass props to the WrappedComponent. In the render() method of the NewComponent, pass all the props (including the additional props added by the HOC) to the WrappedComponent
 
 ```javascript
