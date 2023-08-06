@@ -14,24 +14,28 @@ Higher-order components can be used to implement cross-cutting concerns in your 
 
 ### Define the HOC function
 
+```javascript
 const hoc = (WrappedComponent) => {
-// ...
+  // ...
 }
-
+```
 ### Define the new component
 
+```javascript
 class NewComponent extends React.Component {
-// ...
-render() {
-// ...
+  // ...
+  render() {
+    // ...
+  }
 }
-}
-
+```
 ### pass props to the WrappedComponent. In the render() method of the NewComponent, pass all the props (including the additional props added by the HOC) to the WrappedComponent
 
+```javascript
 render() {
-return <WrappedComponent {...this.props} additionalProp={additionalProp} />
+  return <WrappedComponent {...this.props} additionalProp={additionalProp} />
 }
+```
 
 ### When to Use HOCs in your React Code
 
