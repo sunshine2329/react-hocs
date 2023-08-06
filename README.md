@@ -12,14 +12,14 @@ Higher-order components can be used to implement cross-cutting concerns in your 
 
 ## Higher-Order Component Structure
 
-### Define the HOC function
+1. Define the HOC function
 
 ```javascript
 const hoc = (WrappedComponent) => {
   // ...
 }
 ```
-### Define the new component
+2. Define the new component
 
 ```javascript
 class NewComponent extends React.Component {
@@ -29,7 +29,7 @@ class NewComponent extends React.Component {
   }
 }
 ```
-### pass props to the WrappedComponent. In the render() method of the NewComponent, pass all the props (including the additional props added by the HOC) to the WrappedComponent
+3. pass props to the WrappedComponent. In the render() method of the NewComponent, pass all the props (including the additional props added by the HOC) to the WrappedComponent
 
 ```javascript
 render() {
